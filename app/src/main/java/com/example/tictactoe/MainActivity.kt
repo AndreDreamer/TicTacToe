@@ -10,7 +10,7 @@ import kotlinx.coroutines.*
 class MainActivity : AppCompatActivity() {
 
     private val TIME_TO_THINK_MIN = 2
-    private val TIME_TO_THINK_MAX = 5
+    private val TIME_TO_THINK_MAX = 10
 
     lateinit var binding: ActivityMainBinding
 
