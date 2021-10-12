@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+
+    <string name="your_turn_text">Your turn!</string>
+    <string name="computer_turn_text">Computer is thinking…</string>
+    <string name="tie_text">Tie!</string>
+    <string name="player_won_text">YOU WON!</string>
+    <string name="computer_won_text">YOU LOST!</string>
+
+    <string name="restart_btn">Restart</string>
+
+</resources>
