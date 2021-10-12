@@ -1,7 +1,5 @@
 package com.example.tictactoe
 
-import android.util.Log
-
 /*
         board values description
       0 - empty space
@@ -64,15 +62,14 @@ class Board {
         if (board[0][0] == 1 && board[1][1] == 1 && board[2][2] == 1) value = true
         if (board[0][2] == 1 && board[1][1] == 1 && board[2][0] == 1) value = true
 
-        var v: String = ""
+        var v = ""
         for (i in 0..2) {
             for (j in 0..2) {
                 v += board[i][j].toString() + " "
             }
             v += "\n"
         }
-        Log.d("LOG", "checkPlayerWon: " + value)
-        Log.d("LOG", v)
+
         return value
     }
 
@@ -90,8 +87,6 @@ class Board {
         if (board[0][0] == 2 && board[1][1] == 2 && board[2][2] == 2) value = true
         if (board[0][2] == 2 && board[1][1] == 2 && board[2][0] == 2) value = true
 
-
-        Log.d("LOG", value.toString())
         return value
     }
 

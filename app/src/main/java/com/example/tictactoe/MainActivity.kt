@@ -92,7 +92,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
     private fun computerTurn(board: Board, label: TextView, buttonBoard: Array<Array<Button>>) =
         CoroutineScope(Dispatchers.Main).launch {
             withContext(Dispatchers.IO) {
@@ -133,11 +132,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun lockButtons(buttonBoard: Array<Array<Button>>) {
+    private fun lockButtons(buttonBoard: Array<Array<Button>>) {
         for (i in 0..2) for (j in 0..2) buttonBoard[i][j].isClickable = false
     }
 
-    fun unlockButtons(buttonBoard: Array<Array<Button>>) {
+    private fun unlockButtons(buttonBoard: Array<Array<Button>>) {
         for (i in 0..2) for (j in 0..2) buttonBoard[i][j].isClickable = true
     }
 
